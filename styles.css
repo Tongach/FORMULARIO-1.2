@@ -1,0 +1,308 @@
+:root {
+  --color1: #616E7D; /*barras y botoneras*/
+  --color2: #00b7dc; /*botones activos - separadores y barras finas*/
+  --color3: #dc4444; /*boton cancelar inactivo*/
+  --color4: #dc5555; /*boton cancelar en estado hover*/
+  --color5: #96989A; /*botones inactivos - marcos*/
+  --color6: #EEEEEE; /*fondo de pantalla, plantillas etc*/
+  --color7: #82BF8C; /*barras de titulos o menues*/
+  --color8: #DDDDDE; /*color intermedio del background gradient*/
+  --color9: #26809C; /*color barras en perfil administrador*/
+  --shadow: #555555; /*sombras de cajas*/
+  --fontColorW: #ffffff;/*color de la fuente claro*/
+  --fontColorB: #000000; /*color de la fuente oscuro*/
+}
+
+
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	width: 100vw; 
+	height: auto;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: linear-gradient(to bottom, var(--color6),var(--color8), var(--color5));
+	background-size: 100% 100%;
+}
+
+/*FORMULARIO DE INGRESO*/
+
+.mainIngreso {
+	width: 70%;
+	min-width: 265px;
+	max-width: 850px;
+	height: 450px;
+	min-height: 300px;
+	max-height: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	box-shadow: 5px 5px 10px var(--shadow);
+	border-radius: 20px;
+	margin-top: 5vh;
+	margin-bottom: 50px;
+}
+
+/*LADO IZQUIERDO*/
+
+.ingresoInfo {
+	width: 50%;
+	height: 100%;
+	background-color: var(--color1);
+	border-radius: 20px 0 0 20px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.logoForm {
+	width: 95%;
+	height: 30%;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	
+}
+.textForm {
+	width: 95%;
+	height: 40%;
+	font-size: 8px;
+	color: var(--fontColorW);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.infoTtitle{
+	font-size: 22px;
+	font-weight: lighter;
+}
+
+.infoTtitleLine {
+	width: 50px;
+	height: 2px;
+	background-color: var(--fontColorW);
+	margin-top: -10px;
+}
+
+.textb {
+	font-size: 9px;
+}
+
+.btnForm {
+	width: 95%;
+	height: 30%;
+}
+
+.leerMasBtn {
+	width: 100px;
+	height: 35px;
+	border-radius: 20px;
+	margin-top: 20PX;
+	border: 1px solid var(--fontColorW);
+	color: var(--fontColorW);
+	background-color: var(--color1);
+	transition: .4s;
+}
+
+.leerMasBtn:hover {
+	cursor: pointer;
+	background-color: var(--fontColorW);
+	border: 1px solid var(--color1);
+	color: var(--color1);
+	transition: .4s;
+}
+
+/*LADO DERECHO*/
+
+.ingresoLogin {
+	width: 50%;
+	height: 100%;
+	border-radius: 0 20px 20px 0;
+	background-color: #ffffff;
+}
+.ingresoForm {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-left:15px;
+	padding-right: 15px;
+}
+
+.ingresoTitle {
+	color: #999999;
+}
+
+.ingresoTitleLine {
+	width: 25px;
+	height: 2px;
+	background-color: #24b898;
+}
+
+.divInput {
+	width: 100%;
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.divInputTop {
+	align-items: flex-end;
+}
+
+.inputIngreso {
+	width: 250px;
+	height: 40px;
+	padding-left: 5px;
+	border: none;
+	border-bottom: 1px solid #999999;
+}
+
+.inputIngreso:focus {
+	outline: none;
+}
+
+.icon {
+	width: 40px;
+	height: 40px;
+	border-bottom: 1px solid #999999;
+	color: #999999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.ingresarBtn {
+	width: 300px;
+	max-width: 95%;
+	height: 40px;
+	border-radius: 50px;
+	background-color: var(--color1);
+	color: var(--fontColorW);
+	border: none;
+	box-shadow: 5px 5px 10px #999999;
+	margin-bottom: 20px;
+	transition: .4s;
+}
+
+.ingresarBtn:hover{
+	background: #838f9f;
+	cursor: pointer;
+	transition: .4s;
+}
+
+.ingresarBtn:active {
+	box-shadow: 2px 2px 5px var(--shadow);
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+	
+
+/*FORMULARIO DE INGRESO*/
+
+	.mainIngreso {
+		width: 280px;
+		height: 600px;
+		flex-direction: column;
+	}
+
+	.ingresoInfo {
+		width: 100%;
+		height: 50%;
+		border-radius: 20px 20px 0 0;
+}
+
+	.ingresoLogin {
+		width: 100%;
+		height: 50%;
+		border-radius: 0 0 20px 20px;
+}
+
+	.inputIngreso {
+		width: 200px;
+	}
+
+	.ingresarBtn {
+	width: 200px;
+}
+
+.logoForm {
+	align-items: flex-start;
+	padding-left: 0px;
+	scale: .8;
+}
+
+
+.btnForm {
+	width: 95%;
+	height: 30%;
+	display: flex;
+	align-items: flex-end;
+}
+
+.leerMasBtn {
+	width: 100px;
+	height: 35px;
+	border-radius: 20px;
+	margin-top: 20PX;
+	border: 1px solid var(--fontColorW);
+	color: var(--fontColorW);
+	background-color: #616e7d;
+	transition: .4s;
+}
+
+}
+
+@keyframes textshadow {
+
+	0% {
+		opacity: 0%;
+	}
+
+	25% {
+		opacity: 25%;
+	}
+
+	50% {
+		opacity: 50%;
+	}
+
+	75% {
+		opacity: 75%;
+	}
+
+	100% {
+		opacity: 100%
+	}
+}
+
+.error-message {
+	color: #ff0000;
+}
+
+/* Add a red border to fields with errors */
+.error {
+  border: 1px solid #ff0000;
+}
+
+

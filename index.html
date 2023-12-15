@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="{% static 'solicitud_imagenes/images/icon.png' %}">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/6baa3b066f.js" crossorigin="anonymous"></script>
+	<title>Centro de Operaciones y Monitoreo</title>
+	
+</head>
+<body>
+	<main class="mainIngreso">
+		<section class="ingresoInfo">
+			<div class="logoForm">
+				<img src="img/logoClaro.png" alt="imagenLogo" class="imgLogo" width="200" height="50">
+			</div>
+			<div class="textForm">
+				<h1 class="infoTtitle">Bienvenido</h1>
+				<hr class="infoTtitleLine">
+				<br>
+				<p class="infoText">
+				<b class="textb">COMGP.AR</b> es una plataforma de acceso restringida y dinámico, a la cual contaran con acceso sólo aquellas
+				personas física que previo registro, sean autorizadas a ingresar y tomar conocimiento de la información aquí
+				publicada.<br><br>
+				Es un desarrollo destinado exclusivamente a las autoridades designadas, sea policial, fiscal o municipal.<br><br>
+				La plataforma sera la base para la nueva forma de solicitar los registros fílmicos, los cuales una vez solicitados,
+				figuraran en un listado exclusivo a cada uno de los usuarios</p>
+			</div>
+			<div class="btnForm">
+				<button type="submit" class="leerMasBtn">Leer mas</button>
+			</div>
+		</section>
+		<section class="ingresoLogin">
+			<form  method="post" action="#" class="ingresoForm">
+				
+
+				
+				<h2 class="ingresoTitle">INGRESO</h2>	
+				<hr class="ingresoTitleLine">
+				<div class="divInput divInputTop">
+					<input type="email" id="user" name="email" class="inputEmail inputIngreso" placeholder="Usuario" required="">
+					<label class="icon iconAccess"><i class="fa-solid fa-user"></i></label>
+				</div>
+				<div class="divInput .divInputBottom">
+					<input type="password" id="password" name="password" class="inputPass inputIngreso" placeholder="Contraseña" required="">
+					<label class="icon iconAccess"><i class="fa-solid fa-key"></i></label>
+				</div>
+
+				<button type="submit" id="login" class="ingresarBtn">INGRESAR</button>
+         	   <div class="form-group">
+		 	   
+
+		 	   
+           	 	</div>
+			</form>
+		</section>
+	</main>
+
+</body>
+</html>	
