@@ -37,7 +37,7 @@
 		</section>
 		<section class="ingresoLogin">
 			<form  method="post" action="#" class="ingresoForm">
-				
+				{% csrf_token %}
 				<h2 class="ingresoTitle">INGRESO</h2>	
 				<hr class="ingresoTitleLine">
 				<div class="divInput divInputTop">
@@ -52,7 +52,9 @@
 				<button type="submit" id="login" class="ingresarBtn">INGRESAR</button>
 				<div class="infoUsuario"><p>Para solicitar un usuario debe remir un correo electrónico desde una cuenta oficial a <a href="#" class="linkUserMail">usuarios@comgp.ar</a>indicando: Nombre, Apellido, Legajo, Dependencia, Cargo y Funciones.</p></div>
          	   <div class="form-group">
-		 	  
+		 	   {% for message in messages %}
+		  	  		<div{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</div>
+		 	   {% endfor %}
            	 	</div>
 			</form>
 		</section>
